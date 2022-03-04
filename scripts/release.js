@@ -105,7 +105,7 @@ try {
 
   log('Generating package.json...')
   const packageConfig = {
-    name: packageName,
+    name: `@waybetter/${packageName}`,
     version: nextVersion,
     ...require(BASE_PACKAGE_LOC),
     ...require(path.resolve(sourceDir, 'package.json')),
